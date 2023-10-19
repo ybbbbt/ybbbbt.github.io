@@ -32,6 +32,7 @@
   <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
@@ -40,6 +41,7 @@
 
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
 <body>
@@ -101,17 +103,17 @@
           <div class="author-block">
             <a href="https://ybbbbt.com">Bangbang Yang</a><sup>1</sup>,</div>
           <div class="author-block">
-            <a href="https://github.com/wqdong8">Wenqi Dong</a><sup>1</sup>,</div>
+            <a href="https://github.com/wqdong8">Wenqi Dong</a><sup>2</sup>,</div>
           <div class="author-block">
             <a href="https://scholar.google.com/citations?user=S4HGIIUAAAAJ&hl=en">Lin Ma</a><sup>1</sup>,</div>
           <div class="author-block">
             <a href="https://wbhu.github.io/">Wenbo Hu</a><sup>1</sup>,
           </div>
           <div class="author-block">
-            <a href="http://www.liuxiao.org/">Xiao Liu</a><sup>2</sup>,
+            <a href="http://www.liuxiao.org/">Xiao Liu</a><sup>1</sup>,
           </div>
           <div class="author-block">
-            <a href="https://zhpcui.github.io/">Zhaopeng Cui</a><sup>1</sup>,
+            <a href="https://zhpcui.github.io/">Zhaopeng Cui</a><sup>2</sup>,
           </div>
           <div class="author-block">
             <a href="">Yuewen Ma</a><sup>1</sup>
@@ -128,7 +130,7 @@
           <div class="publication-links">
             <!-- PDF Link. -->
             <span class="link-block">
-                <a href="media/dreamspace_paper.pdf"
+                <a href="media/DreamSpace.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -161,6 +163,192 @@
   </div>
 </section>
 
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <video id="teaser" autoplay controls muted loop playsinline height="100%">
+        <source src="media/dreamspace_teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+      <i>DreamSpace</i> allows users to personalize the appearance of real-world scene reconstructions with text prompts, and delivers immersive VR experiences on HMD devices.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Diffusion-based methods have achieved prominent success in generating 2D media.
+          However, accomplishing similar proficiencies for scene-level mesh texturing in 3D spatial applications, e.g., XR/VR, remains constrained, primarily due to the intricate nature of 3D geometry and the necessity for immersive free-viewpoint rendering.
+          In this paper, we propose a novel indoor scene texturing framework, which delivers text-driven texture generation with enchanting details and authentic spatial coherence.
+          The key insight is to first imagine a stylized 360° panoramic texture from the central viewpoint of the scene, and then propagate it to the rest areas with inpainting and imitating techniques.
+          To ensure meaningful and aligned textures to the scene, we develop a novel coarse-to-fine panoramic texture generation approach with dual texture alignment, which both considers the geometry and texture cues of the captured scenes.
+          To survive from cluttered geometries during texture propagation, we design a separated strategy, which conducts texture inpainting in confidential regions and then learns an implicit imitating network to synthesize textures in occluded and tiny structural areas.
+          Extensive experiments and the immersive VR application on real-world indoor scenes demonstrate the high quality of the generated textures and the engaging experience on VR headsets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Video</h2>
+        <!-- <h2 class="title is-5">YouTube Source</h2> -->
+        <div class="publication-video">
+          <iframe width="640" height="480" src="https://www.youtube.com/embed/fKO7GYjDi28"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+
+
+  <div class="container is-max-desktop">
+  <div class="content has-text-justified">
+    <h2 class="title is-3 has-text-centered"><p>Key Insight</p></h2>
+    <video id="functions" autoplay controls muted loop playsinline height="100%">
+      <source src="media/key_insight.mp4"
+              type="video/mp4">
+    </video>
+    <p>
+The key insight of our work is to generate and propagate textures in the panoramic space.
+First, we transfer the panorama of the scene reconstructions into high-resolution stylized images that align to the real-world geometry.
+Then, we propagate the stylized panorama into the rest of the scenes with inpainting and imitating techniques, while taking into account occlusions in complex real-world geometries.
+    </p>
+  </div>
+  </div>
+
+
+  <br/>
+
+    <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3 has-text-centered"><p>Scene Mesh Texturing on DreamSpot Dataset</p></h2>
+      <video id="functions" autoplay controls muted loop playsinline height="100%">
+        <source src="media/dreamspot_show_smooth.mp4"
+                type="video/mp4">
+      </video>
+      <p>
+        We show scene mesh texturing on our captured DreamSpot Dataset.
+        Here, we first reconstruct the real-world scenes with images captured by an iPhone.
+        Then, we transform the scene into several styles, such as cyberpunk, anime landscape, nebula or harrypotter.
+      </p>
+    </div>
+    </div>
+
+    <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3 has-text-centered"><p>Scene Mesh Texturing on DreamSpot Dataset</p></h2>
+      <video id="functions" autoplay controls muted loop playsinline height="100%">
+        <source src="media/dreamspot_show_smooth.mp4"
+                type="video/mp4">
+      </video>
+      <p>
+        We show scene mesh texturing on our captured DreamSpot Dataset.
+        Here, we first reconstruct the real-world scenes with images captured by an iPhone.
+        Then, we transform the scene into several styles, such as cyberpunk, anime landscape, nebula or harrypotter.
+      </p>
+    </div>
+    </div>
+
+
+  <br/>
+
+<section class="hero is-white">
+    <div class="container is-max-desktop">
+    <div class="hero-body ">
+      <h2 class="title is-3 has-text-centered"><p>Scene Mesh Texturing on Replica Dataset</p></h2>
+        <div class="container" style="text-align: center">
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-lego">
+                    <video poster="" id="lego" autoplay controls muted loop playsinline height="100%">
+                        <source src="media/replica_office_0_show.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-mic">
+                    <video poster="" id="mic" autoplay controls muted loop playsinline height="100%">
+                        <source src="media/replica_room_0_show.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-chair">
+                    <video poster="" id="chair" autoplay controls muted loop playsinline height="100%">
+                        <source src="media/replica_room_1_show.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            We show scene mesh texturing on the Replica Dataset, including office 0, room 0, room 1.
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- <section class="hero is-white">
+    <div class="container is-max-desktop">
+    <div class="hero-body ">
+      <h2 class="title is-3 has-text-centered"><p>Immersive VR Application</p></h2>
+        <div class="container" style="text-align: center">
+            <div id="results-carousel" class="carousel results-carousel">
+                <div class="item item-lego">
+                    <video poster="" id="lego" autoplay controls muted loop playsinline width="60%">
+                        <source src="media/immersive_vr_home.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-mic">
+                    <video poster="" id="mic" autoplay controls muted loop playsinline width="60%">
+                        <source src="media/immersive_vr_office.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            Since the fully stylized scenes are the triangle meshes with baked UV textures, we can directly upload and visualize them on HMD devices without PC streaming.
+            We also make transparent windows on the user-defined region, which allows to see the outside generated skybox from the virtual window.
+        </div>
+    </div>
+    </div>
+</section> -->
+
+
+
+<!-- <section class="section">
+
+  <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3 has-text-centered"><p>Framework Overview</p></h2>
+      <div class="has-text-centered">
+        <img style="width: 100%;" src="media/framework.jpg"
+             alt="DreamSpace framework."/>
+      </div>
+      <p>
+      Given a reconstructed real-world scene and users' text prompts, we first generate a high-resolution and geometrically aligned panoramic texture at the central viewpoint.
+      Then, we propagate the textures into the rest regions with holistic texture propagation, where the confidential texture inpainting fills textures at the large confident areas and the implicit texture imitating predicts colors at the tiny areas.
+      The resulting scene meshes with baked stylized UV textures can be uploaded into HMD devices for immersive VR touring.
+      </p>
+    </div>
+  </div> -->
+
+
+  <br/>
+
+
+  <br/>
+
+
 
 <!-- <section class="section" id="BibTeX">
   <div class="container content is-max-desktop">
@@ -170,6 +358,7 @@
   </div>
 </section> -->
 
+</section>
 
 <footer class="footer">
   <div class="container">

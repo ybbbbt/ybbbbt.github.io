@@ -12,11 +12,11 @@
 <link rel="stylesheet" href="styles/w3.css">
 <!-- For icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<!-- <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"> -->
 
 <!-- For utilities -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 <!-- <link rel="stylesheet" href="styles/css/bootstrap.min.css"> -->
 
 <style>
@@ -205,7 +205,7 @@
         <h2 style="color:#000000;text-align: center">Bangbang Yang</h2>
         <div style="text-align: center;font-weight: 600; font-size: large;">杨镑镑</div>
         <p>
-          I am currently a researcher and developer at <a href="https://www.picoxr.com/global">PICO</a> Mixed Reality group in the <a href="https://www.bytedance.com/en/">ByteDance Ltd</a>.
+          I am currently a researcher and developer in <a href="https://www.bytedance.com/en/">ByteDance Ltd</a>.
           I obtained my Ph.D. degree from the <a
             href="https://www.github.com/zju3dv">ZJU3DV group</a> of State Key Lab of CAD&CG, Zhejiang University in 2022, advised by <a
             href="http://www.cad.zju.edu.cn/home/gfzhang/">Prof. Guofeng Zhang</a> and <a
@@ -213,7 +213,7 @@
           Before that, I got my bachelor degree from Hefei University of Technology.
           <br>
           <br>
-          I have a broader interest in 3D vision/graphics and its AR/VR applications, including 3D content generation and editing (3D AIGC), neural
+          I have a broader interest in 3D vision/graphics and its XR applications, including 3D content generation and editing (3D AIGC), neural
           rendering, 3D scene understanding.
         </p>
       </div>
@@ -247,11 +247,41 @@
 
     <!-- Publication项 -->
 
+    <div class="w3-row-padding w3-section" onmouseout="dreamspace_start()" onmouseover="dreamspace_end()">
+      <div class="w3-col m6 w3-center">
+        <div style="width: 60% ; margin-left: auto; margin-right: auto;">
+        <video muted autoplay loop>
+          <source src="publication/dreamspace/media/teaser_small.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        </div>
+      </div>
+      <div class="w3-col m6 w3-">
+        <div class="pub-title">DreamSpace: Dreaming Your Room Space with Text-Driven Panoramic Texture Propagation
+        </div>
+        <div class="pub-conference">
+          arXiv Preprint
+        </div>
+        <div class="pub-authors">
+        <b>Bangbang Yang</b>, Wenqi Dong, Lin Ma, Wenbo Hu, Xiao Liu, Zhaopeng Cui, Yuewen Ma
+        </div>
+        <a class="btn btn-primary btn-outline btn-sm" href="publication/dreamspace/media/DreamSpace.pdf" target="_blank"
+          rel="noopener">
+          Paper
+        </a>
+        /
+        <a class="btn btn-primary btn-outline btn-sm" href="https://ybbbbt.com/publication/dreamspace" target="_blank"
+          rel="noopener">
+          Project Page
+        </a>
+      </div>
+    </div>
+
     <div class="w3-row-padding w3-section" onmouseout="trimip_start()" onmouseover="trimip_end()">
       <div class="w3-col m6 w3-center">
         <div style="width: 60% ; margin-left: auto; margin-right: auto;">
         <video muted autoplay loop>
-          <source src="publication/trimip/trimip.mp4" type="video/mp4">
+          <source src="publication/trimip/compressed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         </div>
@@ -269,6 +299,7 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://wbhu.github.io/projects/Tri-MipRF/index.html" target="_blank"
           rel="noopener">
           Project Page
@@ -282,7 +313,7 @@
       <div class="w3-col m6 w3-center">
         <div style="width: 60% ; margin-left: auto; margin-right: auto;">
         <video muted autoplay loop>
-          <source src="publication/sine/teaser.mp4" type="video/mp4">
+          <source src="publication/sine/compressed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         </div>
@@ -301,10 +332,12 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://zju3dv.github.io/sine/" target="_blank"
           rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/sine/">
           Code
         </a>
@@ -331,14 +364,16 @@
         <b>Bangbang Yang*</b>, Chong Bao*, Junyi Zeng, Hujun Bao, Yinda Zhang, Zhaopeng Cui, Guofeng Zhang
         <b><br>(equal contribution)</b>
         </div>
-        <a class="btn btn-primary btn-outline btn-sm" href="http://www.cad.zju.edu.cn/home/gfzhang/papers/neumesh/neumesh.pdf" target="_blank"
+        <a class="btn btn-primary btn-outline btn-sm" href="https://arxiv.org/pdf/2207.11911" target="_blank"
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://zju3dv.github.io/neumesh/" target="_blank"
           rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/neumesh/">
           Code
         </a>
@@ -350,7 +385,7 @@
       <div class="w3-col m6 w3-center">
         <div style="width: 90% ; margin-left: auto; margin-right: auto;">
         <video muted autoplay loop>
-          <source src="publication/nr_in_a_room/scene_tour_v2.mp4" type="video/mp4">
+          <source src="publication/nr_in_a_room/compressed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -368,10 +403,12 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://zju3dv.github.io/nr_in_a_room/" target="_blank"
           rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/nr_in_a_room/">
           Code
         </a>
@@ -382,7 +419,7 @@
       <div class="w3-col m6 w3-center">
         <div style="width: 85% ; margin-left: auto; margin-right: auto;">
         <video muted autoplay loop>
-          <source src="publication/neural_outdoor_rerender/neural_outdoor_rerender.mp4" type="video/mp4">
+          <source src="publication/neural_outdoor_rerender/compressed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         </div>
@@ -401,10 +438,12 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://zju3dv.github.io/neural_outdoor_rerender/" target="_blank"
           rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/neural_outdoor_rerender/">
           Code
         </a>
@@ -415,7 +454,7 @@
       <div class="w3-col m6 w3-center">
         <div style="width: 85% ; margin-left: auto; margin-right: auto;">
         <video muted autoplay loop>
-          <source src="publication/object_nerf/obj_nerf_small_teaser_v2.mp4" type="video/mp4">
+          <source src="publication/object_nerf/compressed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         </div>
@@ -433,10 +472,12 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://zju3dv.github.io/object_nerf/" target="_blank"
           rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/object_nerf/">
           Code
         </a>
@@ -447,7 +488,7 @@
       <div class="w3-col m6 w3-center">
         <div style="width: 93% ; margin-left: auto; margin-right: auto;">
         <video muted autoplay loop>
-          <source src="publication/latenthuman/latent_human_teaser_v2.mp4" type="video/mp4">
+          <source src="publication/latenthuman/compressed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         </div>
@@ -466,6 +507,7 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://latenthuman.github.io/" target="_blank"
           rel="noopener">
           Project Page
@@ -496,7 +538,7 @@
 
     <div class="w3-row-padding  w3-section">
       <div class="w3-col m6 w3-center">
-        <img src="publication/vs_net/featured.png" style="width:85%">
+        <img src="publication/vs_net/featured.jpg" style="width:85%">
       </div>
       <div class="w3-col m6 w3-">
         <div class="pub-title">VS-Net: Voting with Segmentation for Visual Localization
@@ -512,10 +554,12 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://drinkingcoder.github.io/publication/vs-net"
           target="_blank" rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/VS-Net">
           Code
         </a>
@@ -526,7 +570,7 @@
 
     <div class="w3-row-padding  w3-section">
       <div class="w3-col m6 w3-center">
-        <img src="publication/eval_vislam/vrih-device-setup.png" style="width:80%">
+        <img src="publication/eval_vislam/vrih-device-setup.jpg" style="width:80%">
       </div>
       <div class="w3-col m6 w3-">
         <div class="pub-title">Survey and Evaluation of Monocular Visual-Inertial SLAM Algorithms for Augmented Reality
@@ -541,10 +585,12 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="http://www.zjucvg.net/eval-vislam/"
           target="_blank" rel="noopener">
           Project Page
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/eval-vislam">
           Code
         </a>
@@ -555,7 +601,7 @@
 
     <div class="w3-row-padding  w3-section">
       <div class="w3-col m6 w3-center">
-        <img src="publication/pvio/PRCV2019.png" style="width:85%">
+        <img src="publication/pvio/PRCV2019.jpg" style="width:85%">
       </div>
       <div class="w3-col m6 w3-">
         <div class="pub-title">Robust and Efficient Visual-Inertial Odometry with Multi-plane Priors
@@ -570,14 +616,17 @@
           rel="noopener">
           Paper
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="http://www.cad.zju.edu.cn/home/gfzhang/projects/prcv2019-planeVIO-euroc.mp4"
           target="_blank" rel="noopener">
           Video1
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="http://www.cad.zju.edu.cn/home/gfzhang/projects/prcv2019-planeVIO-tum.mp4"
           target="_blank" rel="noopener">
           Video2
         </a>
+        /
         <a class="btn btn-primary btn-outline btn-sm" href="https://github.com/zju3dv/PVIO">
           Code
         </a>
